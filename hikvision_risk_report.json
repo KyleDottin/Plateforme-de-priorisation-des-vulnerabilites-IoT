@@ -1,0 +1,1048 @@
+{
+  "generated_at": "2026-02-20T11:12:13.303784",
+  "total_cves": 40,
+  "formula": {
+    "description": "RiskScore = (CVSS_norm×W_CVSS + KEV×W_KEV + EPSS_log_norm×W_EPSS) × 100",
+    "weights": {
+      "cvss": 0.3,
+      "kev": 0.4,
+      "epss": 0.3
+    }
+  },
+  "summary": {
+    "risk_score_avg": 29.54,
+    "risk_score_max": 99.03,
+    "risk_score_min": 4.72,
+    "level_distribution": {
+      "CRITIQUE": 1,
+      "MODÉRÉ": 8,
+      "FAIBLE": 31
+    },
+    "kev_count": 1
+  },
+  "vulnerabilities": [
+    {
+      "cve_id": "CVE-2021-36260",
+      "description": "A command injection vulnerability in the web server of some Hikvision product. Due to the insufficient input validation, attacker can exploit the vulnerability to launch a command injection attack by sending some messages with malicious commands.",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "published": "2021-09-22",
+      "last_modified": "2025-11-10",
+      "references": [
+        "http://packetstormsecurity.com/files/164603/Hikvision-Web-Server-Build-210702-Command-Injection.html",
+        "http://packetstormsecurity.com/files/166167/Hikvision-IP-Camera-Unauthenticated-Command-Injection.html",
+        "https://therecord.media/experts-warn-of-widespread-exploitation-involving-hikvision-cameras/",
+        "https://www.cyfirma.com/wp-content/uploads/2022/08/HikvisionSurveillanceCamerasVulnerabilities.pdf",
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-notification-command-injection-vulnerability-in-some-hikvision-products/",
+        "http://packetstormsecurity.com/files/164603/Hikvision-Web-Server-Build-210702-Command-Injection.html",
+        "http://packetstormsecurity.com/files/166167/Hikvision-IP-Camera-Unauthenticated-Command-Injection.html",
+        "https://therecord.media/experts-warn-of-widespread-exploitation-involving-hikvision-cameras/",
+        "https://www.cyfirma.com/wp-content/uploads/2022/08/HikvisionSurveillanceCamerasVulnerabilities.pdf",
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-notification-command-injection-vulnerability-in-some-hikvision-products/",
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2021-36260"
+      ],
+      "epss_score": 94.436,
+      "epss_percentile": 99.98,
+      "in_kev": true,
+      "kev_date_added": "2022-01-10",
+      "kev_ransomware": "Unknown",
+      "risk_score": 99.03,
+      "risk_level": "CRITIQUE",
+      "risk_components": {
+        "cvss_contribution": 29.4,
+        "kev_contribution": 40.0,
+        "epss_contribution": 29.63
+      }
+    },
+    {
+      "cve_id": "CVE-2017-7921",
+      "description": "An Improper Authentication issue was discovered in Hikvision DS-2CD2xx2F-I Series V5.2.0 build 140721 to V5.4.0 build 160530, DS-2CD2xx0F-I Series V5.2.0 build 140721 to V5.4.0 Build 160401, DS-2CD2xx2FWD Series V5.3.1 build 150410 to V5.4.4 Build 161125, DS-2CD4x2xFWD Series V5.2.0 build 140721 to V5.4.0 Build 160414, DS-2CD4xx5 Series V5.2.0 build 140721 to V5.4.0 Build 160421, DS-2DFx Series V5.2.0 build 140805 to V5.4.5 Build 160928, and DS-2CD63xx Series V5.0.9 build 140305 to V5.3.5 Build 160106 devices. The improper authentication vulnerability occurs when an application does not adequately or correctly authenticate users. This may allow a malicious user to escalate his or her privileges on the system and gain access to sensitive information.",
+      "cvss_score": 10.0,
+      "severity": "CRITICAL",
+      "published": "2017-05-06",
+      "last_modified": "2025-04-20",
+      "references": [
+        "http://www.hikvision.com/us/about_10805.html",
+        "http://www.securityfocus.com/bid/98313",
+        "https://ghostbin.com/paste/q2vq2",
+        "https://ics-cert.us-cert.gov/advisories/ICSA-17-124-01",
+        "http://www.hikvision.com/us/about_10805.html",
+        "http://www.securityfocus.com/bid/98313",
+        "https://ghostbin.com/paste/q2vq2",
+        "https://ics-cert.us-cert.gov/advisories/ICSA-17-124-01",
+        "https://www.hikvision.com/cn/support/CybersecurityCenter/SecurityNotices/20170314/",
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-notification--privilege-escalating-vulnerability-in-cer/",
+        "https://www.hikvision.com/us-en/support/document-center/special-notices/privilege-escalating-vulnerability-in-certain-hikvision-ip-cameras/"
+      ],
+      "epss_score": 94.097,
+      "epss_percentile": 99.9,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 59.61,
+      "risk_level": "MODÉRÉ",
+      "risk_components": {
+        "cvss_contribution": 30.0,
+        "kev_contribution": 0.0,
+        "epss_contribution": 29.61
+      }
+    },
+    {
+      "cve_id": "CVE-2013-4977",
+      "description": "Buffer overflow in the RTSP Packet Handler in Hikvision DS-2CD7153-E IP camera with firmware 4.1.0 b130111 (Jan 2013), and possibly other devices, allows remote attackers to cause a denial of service (device crash and reboot) and possibly execute arbitrary code via a long string in the Range header field in an RTSP transaction.",
+      "cvss_score": 10.0,
+      "severity": "HIGH",
+      "published": "2014-03-03",
+      "last_modified": "2025-04-12",
+      "references": [
+        "http://archives.neohapsis.com/archives/bugtraq/2013-08/0046.html",
+        "http://packetstormsecurity.com/files/122718/Hikvision-IP-Cameras-Overflow-Bypass-Privilege-Escalation.html",
+        "http://www.coresecurity.com/advisories/hikvision-ip-cameras-multiple-vulnerabilities",
+        "http://www.securityfocus.com/bid/61642",
+        "https://exchange.xforce.ibmcloud.com/vulnerabilities/86292",
+        "http://archives.neohapsis.com/archives/bugtraq/2013-08/0046.html",
+        "http://packetstormsecurity.com/files/122718/Hikvision-IP-Cameras-Overflow-Bypass-Privilege-Escalation.html",
+        "http://www.coresecurity.com/advisories/hikvision-ip-cameras-multiple-vulnerabilities",
+        "http://www.securityfocus.com/bid/61642",
+        "https://exchange.xforce.ibmcloud.com/vulnerabilities/86292"
+      ],
+      "epss_score": 50.213,
+      "epss_percentile": 97.76,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 55.58,
+      "risk_level": "MODÉRÉ",
+      "risk_components": {
+        "cvss_contribution": 30.0,
+        "kev_contribution": 0.0,
+        "epss_contribution": 25.58
+      }
+    },
+    {
+      "cve_id": "CVE-2022-28171",
+      "description": "The web module in some Hikvision Hybrid SAN/Cluster Storage products have the following security vulnerability. Due to the insufficient input validation, attacker can exploit the vulnerability to execute restricted commands by sending messages with malicious commands to the affected device.",
+      "cvss_score": 7.5,
+      "severity": "HIGH",
+      "published": "2022-06-27",
+      "last_modified": "2024-11-21",
+      "references": [
+        "http://packetstormsecurity.com/files/170818/Hikvision-Remote-Code-Execution-XSS-SQL-Injection.html",
+        "http://packetstormsecurity.com/files/173653/Hikvision-Hybrid-SAN-Ds-a71024-SQL-Injection.html",
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerability-in-some-hikvision-hybrid-san-products/",
+        "http://packetstormsecurity.com/files/170818/Hikvision-Remote-Code-Execution-XSS-SQL-Injection.html",
+        "http://packetstormsecurity.com/files/173653/Hikvision-Hybrid-SAN-Ds-a71024-SQL-Injection.html",
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerability-in-some-hikvision-hybrid-san-products/"
+      ],
+      "epss_score": 84.105,
+      "epss_percentile": 99.28,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 51.38,
+      "risk_level": "MODÉRÉ",
+      "risk_components": {
+        "cvss_contribution": 22.5,
+        "kev_contribution": 0.0,
+        "epss_contribution": 28.88
+      }
+    },
+    {
+      "cve_id": "CVE-2014-4880",
+      "description": "Buffer overflow in Hikvision DVR DS-7204 Firmware 2.2.10 build 131009, and other models and versions, allows remote attackers to execute arbitrary code via an RTSP PLAY request with a long Authorization header.",
+      "cvss_score": 7.5,
+      "severity": "HIGH",
+      "published": "2014-12-08",
+      "last_modified": "2025-04-12",
+      "references": [
+        "http://packetstormsecurity.com/files/129187/Hikvision-DVR-RTSP-Request-Remote-Code-Execution.html",
+        "http://www.exploit-db.com/exploits/35356",
+        "http://packetstormsecurity.com/files/129187/Hikvision-DVR-RTSP-Request-Remote-Code-Execution.html",
+        "http://www.exploit-db.com/exploits/35356"
+      ],
+      "epss_score": 77.478,
+      "epss_percentile": 98.95,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 50.86,
+      "risk_level": "MODÉRÉ",
+      "risk_components": {
+        "cvss_contribution": 22.5,
+        "kev_contribution": 0.0,
+        "epss_contribution": 28.36
+      }
+    },
+    {
+      "cve_id": "CVE-2023-6895",
+      "description": "A vulnerability was found in Hikvision Intercom Broadcasting System 3.0.3_20201113_RELEASE(HIK). It has been declared as critical. This vulnerability affects unknown code of the file /php/ping.php. The manipulation of the argument jsondata[ip] with the input netstat -ano leads to os command injection. The exploit has been disclosed to the public and may be used. Upgrading to version 4.1.0 is able to address this issue. It is recommended to upgrade the affected component. VDB-248254 is the identifier assigned to this vulnerability.",
+      "cvss_score": 6.3,
+      "severity": "MEDIUM",
+      "published": "2023-12-17",
+      "last_modified": "2024-11-21",
+      "references": [
+        "https://github.com/willchen0011/cve/blob/main/rce.md",
+        "https://vuldb.com/?ctiid.248254",
+        "https://vuldb.com/?id.248254",
+        "https://github.com/willchen0011/cve/blob/main/rce.md",
+        "https://vuldb.com/?ctiid.248254",
+        "https://vuldb.com/?id.248254"
+      ],
+      "epss_score": 92.998,
+      "epss_percentile": 99.77,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 48.43,
+      "risk_level": "MODÉRÉ",
+      "risk_components": {
+        "cvss_contribution": 18.9,
+        "kev_contribution": 0.0,
+        "epss_contribution": 29.53
+      }
+    },
+    {
+      "cve_id": "CVE-2013-4975",
+      "description": "Hikvision DS-2CD7153-E IP Camera has Privilege Escalation",
+      "cvss_score": 8.8,
+      "severity": "HIGH",
+      "published": "2019-12-27",
+      "last_modified": "2024-11-21",
+      "references": [
+        "http://www.coresecurity.com/advisories/hikvision-ip-cameras-multiple-vulnerabilities",
+        "http://www.securityfocus.com/bid/61643",
+        "https://exchange.xforce.ibmcloud.com/vulnerabilities/86291",
+        "http://www.coresecurity.com/advisories/hikvision-ip-cameras-multiple-vulnerabilities",
+        "http://www.securityfocus.com/bid/61643",
+        "https://exchange.xforce.ibmcloud.com/vulnerabilities/86291"
+      ],
+      "epss_score": 14.469,
+      "epss_percentile": 94.28,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 44.18,
+      "risk_level": "MODÉRÉ",
+      "risk_components": {
+        "cvss_contribution": 26.4,
+        "kev_contribution": 0.0,
+        "epss_contribution": 17.78
+      }
+    },
+    {
+      "cve_id": "CVE-2013-4976",
+      "description": "Hikvision DS-2CD7153-E IP Camera has security bypass via hardcoded credentials",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "published": "2019-12-27",
+      "last_modified": "2024-11-21",
+      "references": [
+        "http://www.coresecurity.com/advisories/hikvision-ip-cameras-multiple-vulnerabilities",
+        "http://www.securityfocus.com/bid/61646",
+        "https://exchange.xforce.ibmcloud.com/vulnerabilities/86293",
+        "http://www.coresecurity.com/advisories/hikvision-ip-cameras-multiple-vulnerabilities",
+        "http://www.securityfocus.com/bid/61646",
+        "https://exchange.xforce.ibmcloud.com/vulnerabilities/86293"
+      ],
+      "epss_score": 8.264,
+      "epss_percentile": 92.05,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 43.84,
+      "risk_level": "MODÉRÉ",
+      "risk_components": {
+        "cvss_contribution": 29.4,
+        "kev_contribution": 0.0,
+        "epss_contribution": 14.44
+      }
+    },
+    {
+      "cve_id": "CVE-2023-6893",
+      "description": "A vulnerability was found in Hikvision Intercom Broadcasting System 3.0.3_20201113_RELEASE(HIK) and classified as problematic. Affected by this issue is some unknown functionality of the file /php/exportrecord.php. The manipulation of the argument downname with the input C:\\ICPAS\\Wnmp\\WWW\\php\\conversion.php leads to path traversal. The exploit has been disclosed to the public and may be used. Upgrading to version 4.1.0 is able to address this issue. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-248252.",
+      "cvss_score": 4.3,
+      "severity": "MEDIUM",
+      "published": "2023-12-17",
+      "last_modified": "2024-11-21",
+      "references": [
+        "https://github.com/willchen0011/cve/blob/main/download.md",
+        "https://vuldb.com/?ctiid.248252",
+        "https://vuldb.com/?id.248252",
+        "https://github.com/willchen0011/cve/blob/main/download.md",
+        "https://vuldb.com/?ctiid.248252",
+        "https://vuldb.com/?id.248252"
+      ],
+      "epss_score": 88.406,
+      "epss_percentile": 99.48,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 42.11,
+      "risk_level": "MODÉRÉ",
+      "risk_components": {
+        "cvss_contribution": 12.9,
+        "kev_contribution": 0.0,
+        "epss_contribution": 29.21
+      }
+    },
+    {
+      "cve_id": "CVE-2018-6414",
+      "description": "A buffer overflow vulnerability in the web server of some Hikvision IP Cameras allows an attacker to send a specially crafted message to affected devices. Due to the insufficient input validation, successful exploit can corrupt memory and lead to arbitrary code execution or crash the process.",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "published": "2018-08-13",
+      "last_modified": "2024-11-21",
+      "references": [
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-notification--buffer-overflow-vulnerability-in-some-hik/",
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-notification--buffer-overflow-vulnerability-in-some-hik/"
+      ],
+      "epss_score": 0.382,
+      "epss_percentile": 59.11,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 31.49,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 29.4,
+        "kev_contribution": 0.0,
+        "epss_contribution": 2.09
+      }
+    },
+    {
+      "cve_id": "CVE-2023-28815",
+      "description": "Some versions of Hikvision's iSecure Center Product contain insufficient parameter validation, resulting in a command injection vulnerability. Attackers may exploit this to gain platform privileges and execute arbitrary commands on the system.iSecure Center is software released for China's domestic market only, with no overseas release.",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "published": "2025-10-17",
+      "last_modified": "2025-10-21",
+      "references": [
+        "https://www.hikvision.com/cn/support/CybersecurityCenter/SecurityNotices/2023-04/"
+      ],
+      "epss_score": 0.364,
+      "epss_percentile": 57.99,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 31.4,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 29.4,
+        "kev_contribution": 0.0,
+        "epss_contribution": 2.0
+      }
+    },
+    {
+      "cve_id": "CVE-2023-28808",
+      "description": "Some Hikvision Hybrid SAN/Cluster Storage products have an access control vulnerability which can be used to obtain the admin permission. The attacker can exploit the vulnerability by sending crafted messages to the affected devices.",
+      "cvss_score": 9.1,
+      "severity": "CRITICAL",
+      "published": "2023-04-11",
+      "last_modified": "2024-11-21",
+      "references": [
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerability-in-some-hikvision-hybrid-san-cluster-stor/",
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerability-in-some-hikvision-hybrid-san-cluster-stor/"
+      ],
+      "epss_score": 0.668,
+      "epss_percentile": 70.88,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 30.61,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 27.3,
+        "kev_contribution": 0.0,
+        "epss_contribution": 3.31
+      }
+    },
+    {
+      "cve_id": "CVE-2023-28814",
+      "description": "Some versions of Hikvision's iSecure Center Product have an improper file upload control vulnerability. Due to the improper verification of file to be uploaded, attackers may upload malicious files to the server. iSecure Center is software released for China's domestic market only, with no overseas release.",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "published": "2025-10-17",
+      "last_modified": "2025-10-21",
+      "references": [
+        "https://www.hikvision.com/cn/support/CybersecurityCenter/SecurityNotices/2023-03/"
+      ],
+      "epss_score": 0.083,
+      "epss_percentile": 24.15,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 29.91,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 29.4,
+        "kev_contribution": 0.0,
+        "epss_contribution": 0.51
+      }
+    },
+    {
+      "cve_id": "CVE-2017-7923",
+      "description": "A Password in Configuration File issue was discovered in Hikvision DS-2CD2xx2F-I Series V5.2.0 build 140721 to V5.4.0 build 160530, DS-2CD2xx0F-I Series V5.2.0 build 140721 to V5.4.0 Build 160401, DS-2CD2xx2FWD Series V5.3.1 build 150410 to V5.4.4 Build 161125, DS-2CD4x2xFWD Series V5.2.0 build 140721 to V5.4.0 Build 160414, DS-2CD4xx5 Series V5.2.0 build 140721 to V5.4.0 Build 160421, DS-2DFx Series V5.2.0 build 140805 to V5.4.5 Build 160928, and DS-2CD63xx Series V5.0.9 build 140305 to V5.3.5 Build 160106 devices. The password in configuration file vulnerability could allow a malicious user to escalate privileges or assume the identity of another user and access sensitive information.",
+      "cvss_score": 8.8,
+      "severity": "HIGH",
+      "published": "2017-05-06",
+      "last_modified": "2025-04-20",
+      "references": [
+        "http://www.hikvision.com/us/about_10807.html",
+        "http://www.securityfocus.com/bid/98313",
+        "https://ghostbin.com/paste/q2vq2",
+        "https://ics-cert.us-cert.gov/advisories/ICSA-17-124-01",
+        "http://www.hikvision.com/us/about_10807.html",
+        "http://www.securityfocus.com/bid/98313",
+        "https://ghostbin.com/paste/q2vq2",
+        "https://ics-cert.us-cert.gov/advisories/ICSA-17-124-01",
+        "https://www.hikvision.com/cn/support/CybersecurityCenter/SecurityNotices/20170314/",
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-notification--privilege-escalating-vulnerability-in-cer/",
+        "https://www.hikvision.com/us-en/support/document-center/special-notices/privilege-escalating-vulnerability-in-certain-hikvision-ip-cameras/"
+      ],
+      "epss_score": 0.554,
+      "epss_percentile": 67.61,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 29.25,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 26.4,
+        "kev_contribution": 0.0,
+        "epss_contribution": 2.85
+      }
+    },
+    {
+      "cve_id": "CVE-2022-28173",
+      "description": "The web server of some Hikvision wireless bridge products have an access control vulnerability which can be used to obtain the admin permission. The attacker can exploit the vulnerability by sending crafted messages to the affected devices.",
+      "cvss_score": 9.1,
+      "severity": "CRITICAL",
+      "published": "2022-12-19",
+      "last_modified": "2024-11-21",
+      "references": [
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/access-control-vulnerability-in-some-hikvision-wireless-bridge-products/",
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/access-control-vulnerability-in-some-hikvision-wireless-bridge-products/"
+      ],
+      "epss_score": 0.314,
+      "epss_percentile": 54.13,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 29.06,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 27.3,
+        "kev_contribution": 0.0,
+        "epss_contribution": 1.76
+      }
+    },
+    {
+      "cve_id": "CVE-2018-6413",
+      "description": "There is a buffer overflow in the Hikvision Camera DS-2CD9111-S of V4.1.2 build 160203 and before, and this vulnerability allows remote attackers to launch a denial of service attack (service interruption) via a crafted network setting interface request.",
+      "cvss_score": 7.5,
+      "severity": "HIGH",
+      "published": "2018-04-18",
+      "last_modified": "2024-11-21",
+      "references": [
+        "http://www1.hikvision.com/cn/support_det_591_i514.html",
+        "http://www1.hikvision.com/cn/support_det_591_i514.html"
+      ],
+      "epss_score": 1.1,
+      "epss_percentile": 77.69,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 27.3,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 22.5,
+        "kev_contribution": 0.0,
+        "epss_contribution": 4.8
+      }
+    },
+    {
+      "cve_id": "CVE-2025-66177",
+      "description": "There is a Stack overflow Vulnerability in the device Search and Discovery feature of Hikvision NVR/DVR/CVR/IPC models. If exploited, an attacker on the same local area network (LAN) could cause the device to malfunction by sending specially crafted packets to an unpatched device.",
+      "cvss_score": 8.8,
+      "severity": "HIGH",
+      "published": "2026-01-13",
+      "last_modified": "2026-01-13",
+      "references": [
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/buffer-overflow-vulnerabilities-in-some-hikvision-products/"
+      ],
+      "epss_score": 0.012,
+      "epss_percentile": 1.65,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 26.48,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 26.4,
+        "kev_contribution": 0.0,
+        "epss_contribution": 0.08
+      }
+    },
+    {
+      "cve_id": "CVE-2025-66176",
+      "description": "There is a Stack overflow Vulnerability in the device Search and Discovery feature of Hikvision Access Control Products. If exploited, an attacker on the same local area network (LAN) could cause the device to malfunction by sending specially crafted packets to an unpatched device.",
+      "cvss_score": 8.8,
+      "severity": "HIGH",
+      "published": "2026-01-13",
+      "last_modified": "2026-01-22",
+      "references": [
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/buffer-overflow-vulnerabilities-in-some-hikvision-products/"
+      ],
+      "epss_score": 0.01,
+      "epss_percentile": 0.99,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 26.46,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 26.4,
+        "kev_contribution": 0.0,
+        "epss_contribution": 0.06
+      }
+    },
+    {
+      "cve_id": "CVE-2023-53691",
+      "description": "Hikvision CSMP (Comprehensive Security Management Platform) iSecure Center through 2023-06-25 allows file upload via /center/api/files directory traversal, as exploited in the wild in 2024 and 2025.",
+      "cvss_score": 8.3,
+      "severity": "HIGH",
+      "published": "2025-10-22",
+      "last_modified": "2025-10-22",
+      "references": [
+        "https://zhuanlan.zhihu.com/p/639514473",
+        "https://zhuanlan.zhihu.com/p/639514473"
+      ],
+      "epss_score": 0.102,
+      "epss_percentile": 28.21,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 25.53,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 24.9,
+        "kev_contribution": 0.0,
+        "epss_contribution": 0.63
+      }
+    },
+    {
+      "cve_id": "CVE-2024-58274",
+      "description": "Hikvision CSMP (Comprehensive Security Management Platform) iSecure Center through 2024-08-01 allows execution of a command within $( ) in /center/api/installation/detection JSON data, as exploited in the wild in 2024 and 2025.",
+      "cvss_score": 8.3,
+      "severity": "HIGH",
+      "published": "2025-10-22",
+      "last_modified": "2025-10-22",
+      "references": [
+        "https://forum.butian.net/article/498",
+        "https://github.com/ahisec/nuclei-tps/blob/main/http/vulnerabilities/hikvision/hikvision-csmp-installation-rce.yaml",
+        "https://xz.aliyun.com/news/14639",
+        "https://xz.aliyun.com/news/14639"
+      ],
+      "epss_score": 0.094,
+      "epss_percentile": 26.26,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 25.48,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 24.9,
+        "kev_contribution": 0.0,
+        "epss_contribution": 0.58
+      }
+    },
+    {
+      "cve_id": "CVE-2017-13774",
+      "description": "Hikvision iVMS-4200 devices before v2.6.2.7 allow local users to generate password-recovery codes via unspecified vectors.",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "published": "2017-08-30",
+      "last_modified": "2025-04-20",
+      "references": [
+        "https://ipvm.com/reports/hik-vms-pass",
+        "https://ipvm.com/reports/hik-vms-pass"
+      ],
+      "epss_score": 0.119,
+      "epss_percentile": 30.95,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 24.13,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 23.4,
+        "kev_contribution": 0.0,
+        "epss_contribution": 0.73
+      }
+    },
+    {
+      "cve_id": "CVE-2023-33806",
+      "description": "Insecure default configurations in Hikvision Interactive Tablet DS-D5B86RB/B V2.3.0 build220119, allows attackers to execute arbitrary commands.",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "published": "2024-04-15",
+      "last_modified": "2025-06-20",
+      "references": [
+        "https://gist.github.com/s4fv4n/5a6374cf1dcad85226566eaa325a710d",
+        "https://gist.github.com/s4fv4n/5a6374cf1dcad85226566eaa325a710d"
+      ],
+      "epss_score": 0.112,
+      "epss_percentile": 29.86,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 24.09,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 23.4,
+        "kev_contribution": 0.0,
+        "epss_contribution": 0.69
+      }
+    },
+    {
+      "cve_id": "CVE-2025-45851",
+      "description": "An issue in Hikvision DS-2CD1321-I V5.7.21 build 230819 allows attackers to cause a Denial of Service (DoS) via sending a crafted POST request to the endpoint /ISAPI/Security/challenge. The vendor has stated that upgrading to V5.7.23_SP2 fixes the issue.",
+      "cvss_score": 7.5,
+      "severity": "HIGH",
+      "published": "2025-06-27",
+      "last_modified": "2025-06-30",
+      "references": [
+        "https://assets.hikvision.com/prd/public/all/files/202506/releasenote%5CNetwork_Camera-V5.7.23_SP2_Release_Note-E8.pdf",
+        "https://crashpark.weebly.com/blog/hikvision-ip-camera-unauthenticated-denial-of-service-dos",
+        "https://www.hikvision.com/en/support/download/firmware/"
+      ],
+      "epss_score": 0.113,
+      "epss_percentile": 30.01,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 23.19,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 22.5,
+        "kev_contribution": 0.0,
+        "epss_contribution": 0.69
+      }
+    },
+    {
+      "cve_id": "CVE-2015-4409",
+      "description": "Buffer overflow on Hikvision NVR DS-76xxNI-E1/2 and DS-77xxxNI-E4 devices before 3.4.0 allows remote authenticated users to cause a denial of service (service interruption) via a crafted HTTP request, aka the SDK issue.",
+      "cvss_score": 6.5,
+      "severity": "MEDIUM",
+      "published": "2017-03-13",
+      "last_modified": "2025-04-20",
+      "references": [
+        "http://www.hikvision.com/En/Press-Release-details_435_i1023.html",
+        "http://www.hikvision.com/En/Press-Release-details_435_i1023.html"
+      ],
+      "epss_score": 0.718,
+      "epss_percentile": 72.06,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 23.0,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 19.5,
+        "kev_contribution": 0.0,
+        "epss_contribution": 3.5
+      }
+    },
+    {
+      "cve_id": "CVE-2025-39240",
+      "description": "Some Hikvision Wireless Access Point are vulnerable to authenticated remote command execution due to insufficient input validation. Attackers with valid credentials can exploit this flaw by sending crafted packets containing malicious commands to affected devices, leading to arbitrary command execution.",
+      "cvss_score": 7.2,
+      "severity": "HIGH",
+      "published": "2025-06-13",
+      "last_modified": "2025-06-17",
+      "references": [
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/remote-command-execution-vulnerability-in-some-hikvision-wireless-access-point/"
+      ],
+      "epss_score": 0.171,
+      "epss_percentile": 38.4,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 22.62,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 21.6,
+        "kev_contribution": 0.0,
+        "epss_contribution": 1.02
+      }
+    },
+    {
+      "cve_id": "CVE-2023-28811",
+      "description": "There is a buffer overflow in the password recovery feature of Hikvision NVR/DVR models. If exploited, an attacker on the same local area network (LAN) could cause the device to malfunction by sending specially crafted packets to an unpatched device.",
+      "cvss_score": 7.4,
+      "severity": "HIGH",
+      "published": "2023-11-23",
+      "last_modified": "2024-11-21",
+      "references": [
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/buffer-overflow-vulnerability-in-hikvision-nvr-dvr-devices/",
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/buffer-overflow-vulnerability-in-hikvision-nvr-dvr-devices/"
+      ],
+      "epss_score": 0.054,
+      "epss_percentile": 16.78,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 22.54,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 22.2,
+        "kev_contribution": 0.0,
+        "epss_contribution": 0.34
+      }
+    },
+    {
+      "cve_id": "CVE-2024-29949",
+      "description": "There is a command injection vulnerability in some Hikvision NVRs. This could allow an authenticated user with administrative rights to execute arbitrary commands.",
+      "cvss_score": 7.2,
+      "severity": "HIGH",
+      "published": "2024-04-02",
+      "last_modified": "2024-11-21",
+      "references": [
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerabilities-in-hikvision-nvr-devices/",
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerabilities-in-hikvision-nvr-devices/"
+      ],
+      "epss_score": 0.152,
+      "epss_percentile": 35.99,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 22.51,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 21.6,
+        "kev_contribution": 0.0,
+        "epss_contribution": 0.91
+      }
+    },
+    {
+      "cve_id": "CVE-2022-28172",
+      "description": "The web module in some Hikvision Hybrid SAN/Cluster Storage products have the following security vulnerability. Due to the insufficient input validation, attacker can exploit the vulnerability to XSS attack by sending messages with malicious commands to the affected device.",
+      "cvss_score": 6.5,
+      "severity": "MEDIUM",
+      "published": "2022-06-27",
+      "last_modified": "2024-11-21",
+      "references": [
+        "http://packetstormsecurity.com/files/170818/Hikvision-Remote-Code-Execution-XSS-SQL-Injection.html",
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerability-in-some-hikvision-hybrid-san-products/",
+        "http://packetstormsecurity.com/files/170818/Hikvision-Remote-Code-Execution-XSS-SQL-Injection.html",
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerability-in-some-hikvision-hybrid-san-products/"
+      ],
+      "epss_score": 0.592,
+      "epss_percentile": 68.78,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 22.5,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 19.5,
+        "kev_contribution": 0.0,
+        "epss_contribution": 3.0
+      }
+    },
+    {
+      "cve_id": "CVE-2015-4407",
+      "description": "Buffer overflow on Hikvision NVR DS-76xxNI-E1/2 and DS-77xxxNI-E4 devices before 3.4.0 allows remote authenticated users to cause a denial of service (service interruption) via a crafted HTTP request, aka the PSIA issue.",
+      "cvss_score": 6.5,
+      "severity": "MEDIUM",
+      "published": "2017-03-13",
+      "last_modified": "2025-04-20",
+      "references": [
+        "http://www.hikvision.com/En/Press-Release-details_435_i1023.html",
+        "http://www.hikvision.com/En/Press-Release-details_435_i1023.html"
+      ],
+      "epss_score": 0.568,
+      "epss_percentile": 68.08,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 22.41,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 19.5,
+        "kev_contribution": 0.0,
+        "epss_contribution": 2.91
+      }
+    },
+    {
+      "cve_id": "CVE-2015-4408",
+      "description": "Buffer overflow on Hikvision NVR DS-76xxNI-E1/2 and DS-77xxxNI-E4 devices before 3.4.0 allows remote authenticated users to cause a denial of service (service interruption) via a crafted HTTP request, aka the ISAPI issue.",
+      "cvss_score": 6.5,
+      "severity": "MEDIUM",
+      "published": "2017-03-13",
+      "last_modified": "2025-04-20",
+      "references": [
+        "http://www.hikvision.com/En/Press-Release-details_435_i1023.html",
+        "http://www.hikvision.com/En/Press-Release-details_435_i1023.html"
+      ],
+      "epss_score": 0.568,
+      "epss_percentile": 68.08,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 22.41,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 19.5,
+        "kev_contribution": 0.0,
+        "epss_contribution": 2.91
+      }
+    },
+    {
+      "cve_id": "CVE-2026-0709",
+      "description": "Some Hikvision Wireless Access Points are vulnerable to authenticated command execution due to insufficient input validation. Attackers with valid credentials can exploit this flaw by sending crafted packets containing malicious commands to affected devices, leading to arbitrary command execution.",
+      "cvss_score": 7.2,
+      "severity": "HIGH",
+      "published": "2026-01-30",
+      "last_modified": "2026-02-04",
+      "references": [
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/command-execution-vulnerability-in-some-hikvision-wireless-access-point-products/"
+      ],
+      "epss_score": 0.014,
+      "epss_percentile": 2.55,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 21.69,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 21.6,
+        "kev_contribution": 0.0,
+        "epss_contribution": 0.09
+      }
+    },
+    {
+      "cve_id": "CVE-2025-66174",
+      "description": "There is an improper authentication vulnerability in some Hikvision DVR products. Due to the improper implementation of authentication for the serial port, an attacker with physical access could exploit this vulnerability by connecting to the affected products and run a series of commands.",
+      "cvss_score": 6.5,
+      "severity": "MEDIUM",
+      "published": "2025-12-19",
+      "last_modified": "2025-12-23",
+      "references": [
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/serial-port-privilege-escalation-vulnerabilities-in-some-hikvision-nvr-devices/"
+      ],
+      "epss_score": 0.069,
+      "epss_percentile": 21.23,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 19.93,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 19.5,
+        "kev_contribution": 0.0,
+        "epss_contribution": 0.43
+      }
+    },
+    {
+      "cve_id": "CVE-2017-14953",
+      "description": "HikVision Wi-Fi IP cameras, when used in a wired configuration, allow physically proximate attackers to trigger association with an arbitrary access point by leveraging a default SSID with no WiFi encryption or authentication. NOTE: Vendor states that this is not a vulnerability, but more an increase to the attack surface of the product",
+      "cvss_score": 6.5,
+      "severity": "MEDIUM",
+      "published": "2017-12-01",
+      "last_modified": "2025-04-20",
+      "references": [
+        "http://packetstormsecurity.com/files/145131/HikVision-Wi-Fi-IP-Camera-Wireless-Access-Point-State.html",
+        "http://seclists.org/fulldisclosure/2017/Nov/43",
+        "http://packetstormsecurity.com/files/145131/HikVision-Wi-Fi-IP-Camera-Wireless-Access-Point-State.html",
+        "http://seclists.org/fulldisclosure/2017/Nov/43"
+      ],
+      "epss_score": 0.036,
+      "epss_percentile": 10.53,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 19.73,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 19.5,
+        "kev_contribution": 0.0,
+        "epss_contribution": 0.23
+      }
+    },
+    {
+      "cve_id": "CVE-2025-66173",
+      "description": "There is a privilege escalation vulnerability in some Hikvision DVR products. Due to the improper implementation of authentication for the serial port, an attacker with physical access could exploit this vulnerability by connecting to the affected products and gaining access to an unrestricted shell environment.",
+      "cvss_score": 6.2,
+      "severity": "MEDIUM",
+      "published": "2025-12-19",
+      "last_modified": "2025-12-23",
+      "references": [
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/serial-port-privilege-escalation-vulnerabilities-in-some-hikvision-nvr-devices/"
+      ],
+      "epss_score": 0.068,
+      "epss_percentile": 21.0,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 19.02,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 18.6,
+        "kev_contribution": 0.0,
+        "epss_contribution": 0.42
+      }
+    },
+    {
+      "cve_id": "CVE-2020-7057",
+      "description": "Hikvision DVR DS-7204HGHI-F1 V4.0.1 build 180903 Web Version sends a different response for failed ISAPI/Security/sessionLogin/capabilities login attempts depending on whether the user account exists, which might make it easier to enumerate users. However, only about 4 or 5 failed logins are allowed.",
+      "cvss_score": 5.3,
+      "severity": "MEDIUM",
+      "published": "2020-01-14",
+      "last_modified": "2024-11-21",
+      "references": [
+        "https://sku11army.blogspot.com/2020/01/hikvision-dvr-ds-7204hghi-user.html",
+        "https://sku11army.blogspot.com/2020/01/hikvision-dvr-ds-7204hghi-user.html"
+      ],
+      "epss_score": 0.329,
+      "epss_percentile": 55.45,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 17.74,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 15.9,
+        "kev_contribution": 0.0,
+        "epss_contribution": 1.84
+      }
+    },
+    {
+      "cve_id": "CVE-2023-6894",
+      "description": "A vulnerability was found in Hikvision Intercom Broadcasting System 3.0.3_20201113_RELEASE(HIK). It has been classified as problematic. This affects an unknown part of the file access/html/system.html of the component Log File Handler. The manipulation leads to information disclosure. The exploit has been disclosed to the public and may be used. Upgrading to version 4.1.0 is able to address this issue. It is recommended to upgrade the affected component. The identifier VDB-248253 was assigned to this vulnerability.",
+      "cvss_score": 4.3,
+      "severity": "MEDIUM",
+      "published": "2023-12-17",
+      "last_modified": "2024-11-21",
+      "references": [
+        "https://github.com/willchen0011/cve/blob/main/unaccess.md",
+        "https://vuldb.com/?ctiid.248253",
+        "https://vuldb.com/?id.248253",
+        "https://github.com/willchen0011/cve/blob/main/unaccess.md",
+        "https://vuldb.com/?ctiid.248253",
+        "https://vuldb.com/?id.248253"
+      ],
+      "epss_score": 0.097,
+      "epss_percentile": 27.06,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 13.5,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 12.9,
+        "kev_contribution": 0.0,
+        "epss_contribution": 0.6
+      }
+    },
+    {
+      "cve_id": "CVE-2024-29948",
+      "description": "There is an out-of-bounds read vulnerability in some Hikvision NVRs. An authenticated attacker could exploit this vulnerability by sending specially crafted messages to a vulnerable device, causing a service abnormality.",
+      "cvss_score": 3.8,
+      "severity": "LOW",
+      "published": "2024-04-02",
+      "last_modified": "2024-11-21",
+      "references": [
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerabilities-in-hikvision-nvr-devices/",
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerabilities-in-hikvision-nvr-devices/"
+      ],
+      "epss_score": 0.053,
+      "epss_percentile": 16.41,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 11.73,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 11.4,
+        "kev_contribution": 0.0,
+        "epss_contribution": 0.33
+      }
+    },
+    {
+      "cve_id": "CVE-2024-29947",
+      "description": "There is a NULL dereference pointer vulnerability in some Hikvision NVRs. Due to an insufficient validation of a parameter in a message, an attacker may send specially crafted messages to an affected product, causing a process abnormality. ",
+      "cvss_score": 2.7,
+      "severity": "LOW",
+      "published": "2024-04-02",
+      "last_modified": "2024-11-21",
+      "references": [
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerabilities-in-hikvision-nvr-devices/",
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerabilities-in-hikvision-nvr-devices/"
+      ],
+      "epss_score": 0.028,
+      "epss_percentile": 7.99,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 8.28,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 8.1,
+        "kev_contribution": 0.0,
+        "epss_contribution": 0.18
+      }
+    },
+    {
+      "cve_id": "CVE-2025-34067",
+      "description": "An unauthenticated remote command execution vulnerability exists in the applyCT component of the Hikvision Integrated Security Management Platform due to the use of a vulnerable version of the Fastjson library. The endpoint /bic/ssoService/v1/applyCT deserializes untrusted user input, allowing an attacker to trigger Fastjson's auto-type feature to load arbitrary Java classes. By referencing a malicious class via an LDAP URL, an attacker can achieve remote code execution on the underlying system. Exploitation evidence was observed by the Shadowserver Foundation on 2025-02-05 UTC.",
+      "cvss_score": "N/A",
+      "severity": "N/A",
+      "published": "2025-07-02",
+      "last_modified": "2025-11-20",
+      "references": [
+        "https://github.com/PeiQi0/PeiQi-WIKI-Book/blob/main/docs/wiki/iot/HIKVISION/HIKVISION%20%E7%BB%BC%E5%90%88%E5%AE%89%E9%98%B2%E7%AE%A1%E7%90%86%E5%B9%B3%E5%8F%B0%20applyCT%20Fastjson%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C%E6%BC%8F%E6%B4%9E.md",
+        "https://s4e.io/tools/hikvision-applyct-remote-code-execution",
+        "https://vulncheck.com/advisories/hikvision-ismp-rce-applyct"
+      ],
+      "epss_score": 2.394,
+      "epss_percentile": 84.74,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 7.91,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 0.0,
+        "kev_contribution": 0.0,
+        "epss_contribution": 7.91
+      }
+    },
+    {
+      "cve_id": "CVE-2025-34058",
+      "description": "Hikvision Streaming Media Management Server v2.3.5 uses default credentials that allow remote attackers to authenticate and access restricted functionality. After authenticating with these credentials, an attacker can exploit an arbitrary file read vulnerability in the /systemLog/downFile.php endpoint via directory traversal in the fileName parameter. This exploit chain can enable unauthorized access to sensitive system files.",
+      "cvss_score": "N/A",
+      "severity": "N/A",
+      "published": "2025-07-01",
+      "last_modified": "2025-07-03",
+      "references": [
+        "https://blog.csdn.net/qq_40684306/article/details/115278837",
+        "https://vulncheck.com/advisories/hikvision-streaming-server-default-creds-file-read",
+        "https://www.cnvd.org.cn/flaw/show/CNVD-2021-14544",
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/"
+      ],
+      "epss_score": 1.076,
+      "epss_percentile": 77.44,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 4.72,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 0.0,
+        "kev_contribution": 0.0,
+        "epss_contribution": 4.72
+      }
+    }
+  ]
+}
