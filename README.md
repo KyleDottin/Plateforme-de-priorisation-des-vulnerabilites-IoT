@@ -25,6 +25,26 @@ CISA KEV            →  Exploitation confirmée dans la nature
 
 ---
 
+## Installation
+
+Installer les dépendances nécessaires
+```
+pip install requirements.txt
+```
+
+Lancer la rechercher de CVE ainsi que le tri des CVE
+```
+python NVD_vulne_search.py
+python hikvision_risk_score.py
+```
+
+les données trouvées sont stockées réspectivement dans `hickvision_cves.json` et `hikvision_risk_report.json`.
+
+## Usage
+Pour lancer le site, il faut utiliser streamlit :
+```
+streamlit run app.py
+```
 
 ## 👤 Auteur
 
