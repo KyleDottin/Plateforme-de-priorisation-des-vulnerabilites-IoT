@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-20T11:12:13.303784",
+  "generated_at": "2026-03-07T17:41:08.067157",
   "total_cves": 40,
   "formula": {
     "description": "RiskScore = (CVSS_norm×W_CVSS + KEV×W_KEV + EPSS_log_norm×W_EPSS) × 100",
@@ -10,15 +10,15 @@
     }
   },
   "summary": {
-    "risk_score_avg": 29.54,
+    "risk_score_avg": 30.59,
     "risk_score_max": 99.03,
-    "risk_score_min": 4.72,
+    "risk_score_min": 5.0,
     "level_distribution": {
-      "CRITIQUE": 1,
-      "MODÉRÉ": 8,
+      "CRITIQUE": 2,
+      "MODÉRÉ": 7,
       "FAIBLE": 31
     },
-    "kev_count": 1
+    "kev_count": 2
   },
   "vulnerabilities": [
     {
@@ -57,10 +57,10 @@
     {
       "cve_id": "CVE-2017-7921",
       "description": "An Improper Authentication issue was discovered in Hikvision DS-2CD2xx2F-I Series V5.2.0 build 140721 to V5.4.0 build 160530, DS-2CD2xx0F-I Series V5.2.0 build 140721 to V5.4.0 Build 160401, DS-2CD2xx2FWD Series V5.3.1 build 150410 to V5.4.4 Build 161125, DS-2CD4x2xFWD Series V5.2.0 build 140721 to V5.4.0 Build 160414, DS-2CD4xx5 Series V5.2.0 build 140721 to V5.4.0 Build 160421, DS-2DFx Series V5.2.0 build 140805 to V5.4.5 Build 160928, and DS-2CD63xx Series V5.0.9 build 140305 to V5.3.5 Build 160106 devices. The improper authentication vulnerability occurs when an application does not adequately or correctly authenticate users. This may allow a malicious user to escalate his or her privileges on the system and gain access to sensitive information.",
-      "cvss_score": 10.0,
+      "cvss_score": 9.8,
       "severity": "CRITICAL",
       "published": "2017-05-06",
-      "last_modified": "2025-04-20",
+      "last_modified": "2026-03-05",
       "references": [
         "http://www.hikvision.com/us/about_10805.html",
         "http://www.securityfocus.com/bid/98313",
@@ -72,19 +72,20 @@
         "https://ics-cert.us-cert.gov/advisories/ICSA-17-124-01",
         "https://www.hikvision.com/cn/support/CybersecurityCenter/SecurityNotices/20170314/",
         "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-notification--privilege-escalating-vulnerability-in-cer/",
-        "https://www.hikvision.com/us-en/support/document-center/special-notices/privilege-escalating-vulnerability-in-certain-hikvision-ip-cameras/"
+        "https://www.hikvision.com/us-en/support/document-center/special-notices/privilege-escalating-vulnerability-in-certain-hikvision-ip-cameras/",
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2017-7921"
       ],
-      "epss_score": 94.097,
-      "epss_percentile": 99.9,
-      "in_kev": false,
-      "kev_date_added": "N/A",
-      "kev_ransomware": "N/A",
-      "risk_score": 59.61,
-      "risk_level": "MODÉRÉ",
+      "epss_score": 94.265,
+      "epss_percentile": 99.93,
+      "in_kev": true,
+      "kev_date_added": "2026-03-05",
+      "kev_ransomware": "Unknown",
+      "risk_score": 99.02,
+      "risk_level": "CRITIQUE",
       "risk_components": {
-        "cvss_contribution": 30.0,
-        "kev_contribution": 0.0,
-        "epss_contribution": 29.61
+        "cvss_contribution": 29.4,
+        "kev_contribution": 40.0,
+        "epss_contribution": 29.62
       }
     },
     {
@@ -107,7 +108,7 @@
         "https://exchange.xforce.ibmcloud.com/vulnerabilities/86292"
       ],
       "epss_score": 50.213,
-      "epss_percentile": 97.76,
+      "epss_percentile": 97.78,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -135,7 +136,7 @@
         "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerability-in-some-hikvision-hybrid-san-products/"
       ],
       "epss_score": 84.105,
-      "epss_percentile": 99.28,
+      "epss_percentile": 99.29,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -160,17 +161,17 @@
         "http://packetstormsecurity.com/files/129187/Hikvision-DVR-RTSP-Request-Remote-Code-Execution.html",
         "http://www.exploit-db.com/exploits/35356"
       ],
-      "epss_score": 77.478,
-      "epss_percentile": 98.95,
+      "epss_score": 78.099,
+      "epss_percentile": 98.99,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
-      "risk_score": 50.86,
+      "risk_score": 50.91,
       "risk_level": "MODÉRÉ",
       "risk_components": {
         "cvss_contribution": 22.5,
         "kev_contribution": 0.0,
-        "epss_contribution": 28.36
+        "epss_contribution": 28.41
       }
     },
     {
@@ -189,7 +190,7 @@
         "https://vuldb.com/?id.248254"
       ],
       "epss_score": 92.998,
-      "epss_percentile": 99.77,
+      "epss_percentile": 99.78,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -217,7 +218,7 @@
         "https://exchange.xforce.ibmcloud.com/vulnerabilities/86291"
       ],
       "epss_score": 14.469,
-      "epss_percentile": 94.28,
+      "epss_percentile": 94.3,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -245,7 +246,7 @@
         "https://exchange.xforce.ibmcloud.com/vulnerabilities/86293"
       ],
       "epss_score": 8.264,
-      "epss_percentile": 92.05,
+      "epss_percentile": 92.09,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -273,7 +274,7 @@
         "https://vuldb.com/?id.248252"
       ],
       "epss_score": 88.406,
-      "epss_percentile": 99.48,
+      "epss_percentile": 99.49,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -283,30 +284,6 @@
         "cvss_contribution": 12.9,
         "kev_contribution": 0.0,
         "epss_contribution": 29.21
-      }
-    },
-    {
-      "cve_id": "CVE-2018-6414",
-      "description": "A buffer overflow vulnerability in the web server of some Hikvision IP Cameras allows an attacker to send a specially crafted message to affected devices. Due to the insufficient input validation, successful exploit can corrupt memory and lead to arbitrary code execution or crash the process.",
-      "cvss_score": 9.8,
-      "severity": "CRITICAL",
-      "published": "2018-08-13",
-      "last_modified": "2024-11-21",
-      "references": [
-        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-notification--buffer-overflow-vulnerability-in-some-hik/",
-        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-notification--buffer-overflow-vulnerability-in-some-hik/"
-      ],
-      "epss_score": 0.382,
-      "epss_percentile": 59.11,
-      "in_kev": false,
-      "kev_date_added": "N/A",
-      "kev_ransomware": "N/A",
-      "risk_score": 31.49,
-      "risk_level": "FAIBLE",
-      "risk_components": {
-        "cvss_contribution": 29.4,
-        "kev_contribution": 0.0,
-        "epss_contribution": 2.09
       }
     },
     {
@@ -320,7 +297,31 @@
         "https://www.hikvision.com/cn/support/CybersecurityCenter/SecurityNotices/2023-04/"
       ],
       "epss_score": 0.364,
-      "epss_percentile": 57.99,
+      "epss_percentile": 58.04,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 31.4,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 29.4,
+        "kev_contribution": 0.0,
+        "epss_contribution": 2.0
+      }
+    },
+    {
+      "cve_id": "CVE-2018-6414",
+      "description": "A buffer overflow vulnerability in the web server of some Hikvision IP Cameras allows an attacker to send a specially crafted message to affected devices. Due to the insufficient input validation, successful exploit can corrupt memory and lead to arbitrary code execution or crash the process.",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "published": "2018-08-13",
+      "last_modified": "2024-11-21",
+      "references": [
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-notification--buffer-overflow-vulnerability-in-some-hik/",
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-notification--buffer-overflow-vulnerability-in-some-hik/"
+      ],
+      "epss_score": 0.363,
+      "epss_percentile": 57.92,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -343,17 +344,17 @@
         "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerability-in-some-hikvision-hybrid-san-cluster-stor/",
         "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerability-in-some-hikvision-hybrid-san-cluster-stor/"
       ],
-      "epss_score": 0.668,
-      "epss_percentile": 70.88,
+      "epss_score": 0.61,
+      "epss_percentile": 69.39,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
-      "risk_score": 30.61,
+      "risk_score": 30.38,
       "risk_level": "FAIBLE",
       "risk_components": {
         "cvss_contribution": 27.3,
         "kev_contribution": 0.0,
-        "epss_contribution": 3.31
+        "epss_contribution": 3.08
       }
     },
     {
@@ -367,7 +368,7 @@
         "https://www.hikvision.com/cn/support/CybersecurityCenter/SecurityNotices/2023-03/"
       ],
       "epss_score": 0.083,
-      "epss_percentile": 24.15,
+      "epss_percentile": 24.09,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -400,7 +401,7 @@
         "https://www.hikvision.com/us-en/support/document-center/special-notices/privilege-escalating-vulnerability-in-certain-hikvision-ip-cameras/"
       ],
       "epss_score": 0.554,
-      "epss_percentile": 67.61,
+      "epss_percentile": 67.71,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -424,7 +425,7 @@
         "https://www.hikvision.com/en/support/cybersecurity/security-advisory/access-control-vulnerability-in-some-hikvision-wireless-bridge-products/"
       ],
       "epss_score": 0.314,
-      "epss_percentile": 54.13,
+      "epss_percentile": 54.14,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -448,7 +449,7 @@
         "http://www1.hikvision.com/cn/support_det_591_i514.html"
       ],
       "epss_score": 1.1,
-      "epss_percentile": 77.69,
+      "epss_percentile": 77.78,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -458,6 +459,32 @@
         "cvss_contribution": 22.5,
         "kev_contribution": 0.0,
         "epss_contribution": 4.8
+      }
+    },
+    {
+      "cve_id": "CVE-2024-58274",
+      "description": "Hikvision CSMP (Comprehensive Security Management Platform) iSecure Center through 2024-08-01 allows execution of a command within $( ) in /center/api/installation/detection JSON data, as exploited in the wild in 2024 and 2025.",
+      "cvss_score": 8.3,
+      "severity": "HIGH",
+      "published": "2025-10-22",
+      "last_modified": "2025-10-22",
+      "references": [
+        "https://forum.butian.net/article/498",
+        "https://github.com/ahisec/nuclei-tps/blob/main/http/vulnerabilities/hikvision/hikvision-csmp-installation-rce.yaml",
+        "https://xz.aliyun.com/news/14639",
+        "https://xz.aliyun.com/news/14639"
+      ],
+      "epss_score": 0.359,
+      "epss_percentile": 57.66,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 26.88,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 24.9,
+        "kev_contribution": 0.0,
+        "epss_contribution": 1.98
       }
     },
     {
@@ -471,7 +498,7 @@
         "https://www.hikvision.com/en/support/cybersecurity/security-advisory/buffer-overflow-vulnerabilities-in-some-hikvision-products/"
       ],
       "epss_score": 0.012,
-      "epss_percentile": 1.65,
+      "epss_percentile": 1.6,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -517,43 +544,17 @@
         "https://zhuanlan.zhihu.com/p/639514473",
         "https://zhuanlan.zhihu.com/p/639514473"
       ],
-      "epss_score": 0.102,
-      "epss_percentile": 28.21,
+      "epss_score": 0.113,
+      "epss_percentile": 29.89,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
-      "risk_score": 25.53,
+      "risk_score": 25.59,
       "risk_level": "FAIBLE",
       "risk_components": {
         "cvss_contribution": 24.9,
         "kev_contribution": 0.0,
-        "epss_contribution": 0.63
-      }
-    },
-    {
-      "cve_id": "CVE-2024-58274",
-      "description": "Hikvision CSMP (Comprehensive Security Management Platform) iSecure Center through 2024-08-01 allows execution of a command within $( ) in /center/api/installation/detection JSON data, as exploited in the wild in 2024 and 2025.",
-      "cvss_score": 8.3,
-      "severity": "HIGH",
-      "published": "2025-10-22",
-      "last_modified": "2025-10-22",
-      "references": [
-        "https://forum.butian.net/article/498",
-        "https://github.com/ahisec/nuclei-tps/blob/main/http/vulnerabilities/hikvision/hikvision-csmp-installation-rce.yaml",
-        "https://xz.aliyun.com/news/14639",
-        "https://xz.aliyun.com/news/14639"
-      ],
-      "epss_score": 0.094,
-      "epss_percentile": 26.26,
-      "in_kev": false,
-      "kev_date_added": "N/A",
-      "kev_ransomware": "N/A",
-      "risk_score": 25.48,
-      "risk_level": "FAIBLE",
-      "risk_components": {
-        "cvss_contribution": 24.9,
-        "kev_contribution": 0.0,
-        "epss_contribution": 0.58
+        "epss_contribution": 0.69
       }
     },
     {
@@ -568,7 +569,7 @@
         "https://ipvm.com/reports/hik-vms-pass"
       ],
       "epss_score": 0.119,
-      "epss_percentile": 30.95,
+      "epss_percentile": 30.78,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -592,7 +593,7 @@
         "https://gist.github.com/s4fv4n/5a6374cf1dcad85226566eaa325a710d"
       ],
       "epss_score": 0.112,
-      "epss_percentile": 29.86,
+      "epss_percentile": 29.67,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -616,17 +617,17 @@
         "https://crashpark.weebly.com/blog/hikvision-ip-camera-unauthenticated-denial-of-service-dos",
         "https://www.hikvision.com/en/support/download/firmware/"
       ],
-      "epss_score": 0.113,
-      "epss_percentile": 30.01,
+      "epss_score": 0.124,
+      "epss_percentile": 31.54,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
-      "risk_score": 23.19,
+      "risk_score": 23.25,
       "risk_level": "FAIBLE",
       "risk_components": {
         "cvss_contribution": 22.5,
         "kev_contribution": 0.0,
-        "epss_contribution": 0.69
+        "epss_contribution": 0.75
       }
     },
     {
@@ -641,7 +642,7 @@
         "http://www.hikvision.com/En/Press-Release-details_435_i1023.html"
       ],
       "epss_score": 0.718,
-      "epss_percentile": 72.06,
+      "epss_percentile": 72.15,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -663,17 +664,17 @@
       "references": [
         "https://www.hikvision.com/en/support/cybersecurity/security-advisory/remote-command-execution-vulnerability-in-some-hikvision-wireless-access-point/"
       ],
-      "epss_score": 0.171,
-      "epss_percentile": 38.4,
+      "epss_score": 0.208,
+      "epss_percentile": 43.0,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
-      "risk_score": 22.62,
+      "risk_score": 22.82,
       "risk_level": "FAIBLE",
       "risk_components": {
         "cvss_contribution": 21.6,
         "kev_contribution": 0.0,
-        "epss_contribution": 1.02
+        "epss_contribution": 1.22
       }
     },
     {
@@ -688,7 +689,7 @@
         "https://www.hikvision.com/en/support/cybersecurity/security-advisory/buffer-overflow-vulnerability-in-hikvision-nvr-dvr-devices/"
       ],
       "epss_score": 0.054,
-      "epss_percentile": 16.78,
+      "epss_percentile": 16.58,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -712,7 +713,7 @@
         "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerabilities-in-hikvision-nvr-devices/"
       ],
       "epss_score": 0.152,
-      "epss_percentile": 35.99,
+      "epss_percentile": 35.78,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -738,7 +739,7 @@
         "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerability-in-some-hikvision-hybrid-san-products/"
       ],
       "epss_score": 0.592,
-      "epss_percentile": 68.78,
+      "epss_percentile": 68.88,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -762,7 +763,7 @@
         "http://www.hikvision.com/En/Press-Release-details_435_i1023.html"
       ],
       "epss_score": 0.568,
-      "epss_percentile": 68.08,
+      "epss_percentile": 68.17,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -786,7 +787,7 @@
         "http://www.hikvision.com/En/Press-Release-details_435_i1023.html"
       ],
       "epss_score": 0.568,
-      "epss_percentile": 68.08,
+      "epss_percentile": 68.17,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -804,21 +805,21 @@
       "cvss_score": 7.2,
       "severity": "HIGH",
       "published": "2026-01-30",
-      "last_modified": "2026-02-04",
+      "last_modified": "2026-02-27",
       "references": [
         "https://www.hikvision.com/en/support/cybersecurity/security-advisory/command-execution-vulnerability-in-some-hikvision-wireless-access-point-products/"
       ],
-      "epss_score": 0.014,
-      "epss_percentile": 2.55,
+      "epss_score": 0.017,
+      "epss_percentile": 3.96,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
-      "risk_score": 21.69,
+      "risk_score": 21.71,
       "risk_level": "FAIBLE",
       "risk_components": {
         "cvss_contribution": 21.6,
         "kev_contribution": 0.0,
-        "epss_contribution": 0.09
+        "epss_contribution": 0.11
       }
     },
     {
@@ -831,17 +832,17 @@
       "references": [
         "https://www.hikvision.com/en/support/cybersecurity/security-advisory/serial-port-privilege-escalation-vulnerabilities-in-some-hikvision-nvr-devices/"
       ],
-      "epss_score": 0.069,
-      "epss_percentile": 21.23,
+      "epss_score": 0.068,
+      "epss_percentile": 20.7,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
-      "risk_score": 19.93,
+      "risk_score": 19.92,
       "risk_level": "FAIBLE",
       "risk_components": {
         "cvss_contribution": 19.5,
         "kev_contribution": 0.0,
-        "epss_contribution": 0.43
+        "epss_contribution": 0.42
       }
     },
     {
@@ -858,7 +859,7 @@
         "http://seclists.org/fulldisclosure/2017/Nov/43"
       ],
       "epss_score": 0.036,
-      "epss_percentile": 10.53,
+      "epss_percentile": 10.28,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -880,17 +881,17 @@
       "references": [
         "https://www.hikvision.com/en/support/cybersecurity/security-advisory/serial-port-privilege-escalation-vulnerabilities-in-some-hikvision-nvr-devices/"
       ],
-      "epss_score": 0.068,
-      "epss_percentile": 21.0,
+      "epss_score": 0.09,
+      "epss_percentile": 25.53,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
-      "risk_score": 19.02,
+      "risk_score": 19.16,
       "risk_level": "FAIBLE",
       "risk_components": {
         "cvss_contribution": 18.6,
         "kev_contribution": 0.0,
-        "epss_contribution": 0.42
+        "epss_contribution": 0.56
       }
     },
     {
@@ -905,7 +906,7 @@
         "https://sku11army.blogspot.com/2020/01/hikvision-dvr-ds-7204hghi-user.html"
       ],
       "epss_score": 0.329,
-      "epss_percentile": 55.45,
+      "epss_percentile": 55.47,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -933,7 +934,7 @@
         "https://vuldb.com/?id.248253"
       ],
       "epss_score": 0.097,
-      "epss_percentile": 27.06,
+      "epss_percentile": 26.89,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -957,7 +958,7 @@
         "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerabilities-in-hikvision-nvr-devices/"
       ],
       "epss_score": 0.053,
-      "epss_percentile": 16.41,
+      "epss_percentile": 16.18,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
@@ -967,30 +968,6 @@
         "cvss_contribution": 11.4,
         "kev_contribution": 0.0,
         "epss_contribution": 0.33
-      }
-    },
-    {
-      "cve_id": "CVE-2024-29947",
-      "description": "There is a NULL dereference pointer vulnerability in some Hikvision NVRs. Due to an insufficient validation of a parameter in a message, an attacker may send specially crafted messages to an affected product, causing a process abnormality. ",
-      "cvss_score": 2.7,
-      "severity": "LOW",
-      "published": "2024-04-02",
-      "last_modified": "2024-11-21",
-      "references": [
-        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerabilities-in-hikvision-nvr-devices/",
-        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerabilities-in-hikvision-nvr-devices/"
-      ],
-      "epss_score": 0.028,
-      "epss_percentile": 7.99,
-      "in_kev": false,
-      "kev_date_added": "N/A",
-      "kev_ransomware": "N/A",
-      "risk_score": 8.28,
-      "risk_level": "FAIBLE",
-      "risk_components": {
-        "cvss_contribution": 8.1,
-        "kev_contribution": 0.0,
-        "epss_contribution": 0.18
       }
     },
     {
@@ -1005,17 +982,41 @@
         "https://s4e.io/tools/hikvision-applyct-remote-code-execution",
         "https://vulncheck.com/advisories/hikvision-ismp-rce-applyct"
       ],
-      "epss_score": 2.394,
-      "epss_percentile": 84.74,
+      "epss_score": 2.655,
+      "epss_percentile": 85.54,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
-      "risk_score": 7.91,
+      "risk_score": 8.4,
       "risk_level": "FAIBLE",
       "risk_components": {
         "cvss_contribution": 0.0,
         "kev_contribution": 0.0,
-        "epss_contribution": 7.91
+        "epss_contribution": 8.4
+      }
+    },
+    {
+      "cve_id": "CVE-2024-29947",
+      "description": "There is a NULL dereference pointer vulnerability in some Hikvision NVRs. Due to an insufficient validation of a parameter in a message, an attacker may send specially crafted messages to an affected product, causing a process abnormality. ",
+      "cvss_score": 2.7,
+      "severity": "LOW",
+      "published": "2024-04-02",
+      "last_modified": "2024-11-21",
+      "references": [
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerabilities-in-hikvision-nvr-devices/",
+        "https://www.hikvision.com/en/support/cybersecurity/security-advisory/security-vulnerabilities-in-hikvision-nvr-devices/"
+      ],
+      "epss_score": 0.028,
+      "epss_percentile": 7.76,
+      "in_kev": false,
+      "kev_date_added": "N/A",
+      "kev_ransomware": "N/A",
+      "risk_score": 8.28,
+      "risk_level": "FAIBLE",
+      "risk_components": {
+        "cvss_contribution": 8.1,
+        "kev_contribution": 0.0,
+        "epss_contribution": 0.18
       }
     },
     {
@@ -1031,17 +1032,17 @@
         "https://www.cnvd.org.cn/flaw/show/CNVD-2021-14544",
         "https://www.hikvision.com/en/support/cybersecurity/security-advisory/"
       ],
-      "epss_score": 1.076,
-      "epss_percentile": 77.44,
+      "epss_score": 1.167,
+      "epss_percentile": 78.39,
       "in_kev": false,
       "kev_date_added": "N/A",
       "kev_ransomware": "N/A",
-      "risk_score": 4.72,
+      "risk_score": 5.0,
       "risk_level": "FAIBLE",
       "risk_components": {
         "cvss_contribution": 0.0,
         "kev_contribution": 0.0,
-        "epss_contribution": 4.72
+        "epss_contribution": 5.0
       }
     }
   ]

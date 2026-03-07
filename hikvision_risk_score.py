@@ -11,31 +11,32 @@ Formule :
 """
 
 import json
-import sys
 import math
+import sys
 from datetime import datetime
 
 # Configuration
-INPUT_FILE  = "hikvision_cves.json"
+INPUT_FILE = "hikvision_cves.json"
 OUTPUT_FILE = "hikvision_risk_report.json"
 
-W_CVSS= 0.3
-W_KEV= 0.4
-W_EPSS= 0.3
+W_CVSS = 0.3
+W_KEV = 0.4
+W_EPSS = 0.3
 
 risk_thresholds = {
-    "CRITIQUE":80,
-    "ÉLEVÉ":60,
-    "MODÉRÉ":40,
-    "FAIBLE":0,
+    "CRITIQUE": 80,
+    "ÉLEVÉ": 60,
+    "MODÉRÉ": 40,
+    "FAIBLE": 0,
 }
 
 
 # Normalisation
 
+
 def normalize_cvss(cvss) -> float:
     try:
-        return float(cvss)/10.0
+        return float(cvss) / 10.0
     except (TypeError, ValueError):
         return 0.0
 
@@ -43,15 +44,16 @@ def normalize_cvss(cvss) -> float:
 def normalize_epss(epss_pct) -> float:
     """Normalisation log pour amplifier les petites valeurs réalistes."""
     try:
-        p = float(epss_pct)/100.0
+        p = float(epss_pct) / 100.0
         if p <= 0:
             return 0.0
-        return math.log(1 + 99 * p)/math.log(100)
+        return math.log(1 + 99 * p) / math.log(100)
     except (TypeError, ValueError):
         return 0.0
 
 
 # Scoring
+
 
 def compute_risk_score(cve: dict) -> dict:
     cvss_n = normalize_cvss(cve.get("cvss_score"))
@@ -72,13 +74,14 @@ def compute_risk_score(cve: dict) -> dict:
         "risk_level": risk_level,
         "risk_components": {
             "cvss_contribution": round(cvss_n * W_CVSS * 100, 2),
-            "kev_contribution":  round(kev_n  * W_KEV  * 100, 2),
+            "kev_contribution": round(kev_n * W_KEV * 100, 2),
             "epss_contribution": round(epss_n * W_EPSS * 100, 2),
         },
     }
 
 
 # Export
+
 
 def save_report(scored_cves: list, filename: str):
     scores = [c["risk_score"] for c in scored_cves]
@@ -88,7 +91,7 @@ def save_report(scored_cves: list, filename: str):
 
     report = {
         "generated_at": datetime.now().isoformat(),
-        "total_cves":   len(scored_cves),
+        "total_cves": len(scored_cves),
         "formula": {
             "description": "RiskScore = (CVSS_norm×W_CVSS + KEV×W_KEV + EPSS_log_norm×W_EPSS) × 100",
             "weights": {"cvss": W_CVSS, "kev": W_KEV, "epss": W_EPSS},
@@ -107,22 +110,23 @@ def save_report(scored_cves: list, filename: str):
 
 
 # Main
-
-if __name__ == "__main__":
-    input_path = sys.argv[1] if len(sys.argv) > 1 else INPUT_FILE
-
+def main():
     try:
-        with open(input_path, "r", encoding="utf-8") as f:
+        with open(INPUT_FILE, "r", encoding="utf-8") as f:
             raw = json.load(f)
     except FileNotFoundError:
-        sys.stderr.write(f"Fichier introuvable : {input_path}\n")
+        sys.stderr.write(f"Fichier introuvable : {INPUT_FILE}\n")
         sys.exit(1)
     except json.JSONDecodeError as e:
         sys.stderr.write(f"Erreur JSON : {e}\n")
         sys.exit(1)
 
-    cves   = raw if isinstance(raw, list) else raw.get("vulnerabilities", [])
+    cves = raw if isinstance(raw, list) else raw.get("vulnerabilities", [])
     scored = [compute_risk_score(c) for c in cves]
     scored.sort(key=lambda x: x["risk_score"], reverse=True)
 
     save_report(scored, OUTPUT_FILE)
+
+
+if __name__ == "__main__":
+    main()
