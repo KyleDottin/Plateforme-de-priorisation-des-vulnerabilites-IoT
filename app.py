@@ -1,16 +1,38 @@
 import json
 
+import numpy as np
 import pandas as pd
 import streamlit as st
+from streamlit.runtime.state.common import WidgetArgs
 
 from hikvision_risk_score import main as analyse_date
 from NVD_vulne_search import main as fetch_data
+
+pd.set_option("future.no_silent_downcasting", True)
 
 # Config page web
 st.set_page_config(page_title="Sécurité Hikvision", page_icon="🛡️", layout="wide")
 
 # Récupération du rapport JSON
 REPORT_FILE = "hikvision_risk_report.json"
+
+
+@st.dialog("En détails", width="large")
+def details(data):
+    st.title(data["cve_id"])
+    col1, col2, col3, col4 = st.columns(4)
+    col1.metric("Score composite", data["risk_score"], border=True)
+    col2.metric("EPSS (%)", data["epss_score"], border=True)
+    col3.metric("CVSS", data["cvss_score"], border=True)
+    col4.metric("Niveau de Risque", data["risk_level"], border=True)
+    st.divider()
+    st.badge("Date", color="red", icon=":material/calendar_clock:")
+    st.markdown(data["published"])
+    st.badge("Description", icon=":material/description:")
+    st.markdown(f"**{data['description']}**")
+    st.badge("References", color="green", icon=":material/quick_reference:")
+    for e in data["references"]:
+        st.page_link(e, label=e, icon=":material/link:")
 
 
 # Fonction pour charger les données du rapport
@@ -69,9 +91,11 @@ with tab1:
         df = pd.DataFrame(cves)
 
         df["Action Requise"] = df.apply(determine_action, axis=1)
+        df["cvss_score"] = df["cvss_score"].replace("N/A", np.nan)
 
         display_df = df[
             [
+                "published",
                 "cve_id",
                 "risk_score",
                 "risk_level",
@@ -83,6 +107,7 @@ with tab1:
         ].copy()
 
         display_df.columns = [
+            "Date",
             "CVE ID",
             "Score Composite",
             "Niveau de Risque",
@@ -92,8 +117,23 @@ with tab1:
             "Action Requise",
         ]
 
+        config = {
+            "Date": st.column_config.DateColumn("Date", format="DD / MM / YYYY"),
+            "EPSS (%)": st.column_config.NumberColumn("EPSS (%)", format="%.2f %%"),
+        }
+
         # Affichage du tableau avec Streamlit
-        st.dataframe(display_df, width="stretch", hide_index=True)
+        event = st.dataframe(
+            display_df,
+            column_config=config,
+            width="stretch",
+            hide_index=True,
+            on_select="rerun",
+            selection_mode="single-row",
+        )
+        if event.selection.rows:
+            filtered_df = df.iloc[event.selection.rows[0]]
+            details(filtered_df)
     else:
         st.info("Aucune vulnérabilité trouvée dans le rapport.")
 

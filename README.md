@@ -39,6 +39,8 @@ sudo docker build -t my-streamlit-background-app .
 sudo docker run -p 80:80 my-streamlit-background-app
 ```
 
+Puis, dans votre navigateur, entrer `http://localhost:80` pour accèder à la plateforme.
+
 ## Auteurs
 
 - **Kyle DOTTIN**
